@@ -15,7 +15,7 @@ public class Hotels extends HomePage {
 		super();
 		log=Logger.getLogger(Hotels.class);
 	}
-
+	
 	By location=By.xpath("//div[@id='s2id_autogen1']");
 	By checkIn=By.xpath("//input[@id='checkin']");
 	By checkOut=By.xpath("//input[@id='checkout']");
