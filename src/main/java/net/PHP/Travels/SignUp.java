@@ -74,18 +74,5 @@ public class SignUp extends Browser{
 			driver.findElement(By.xpath("//a[@class='dropdown-item tr']")).click();
 		}
 			
-	/*public static void main(String[] args) throws IOException {
-	SignUp signup=new SignUp();
-	signup.launchBrowser(driver);
-	signup.My_account();
-	signup.SignUp();
-	signup.firstname();
-	signup.lastname();
-	signup.mobileNumber();
-	signup.email();
-	signup.password();
-	signup.confirmPassword();
-	signup.gotIt();
-	signup.submit();
-	}*/
+	
 }
