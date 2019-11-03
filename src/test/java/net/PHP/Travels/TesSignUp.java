@@ -58,11 +58,9 @@ public class TesSignUp extends Browser{
 		  Compare.validateForErrors(driver);
 		  
 		  //capturing screenshot
-		  TakesScreenshot ts=(TakesScreenshot)driver;
-		  File source=ts.getScreenshotAs(OutputType.FILE);
-		  FileUtils.copyFile(source, new File("./Screenshot/signup.png"));
-		  log.info("taking screensht");
-	  }
+		   log.info("taking screenshot of: "+s.getClass());
+	            Screenshot.CaptureScreenshot(driver,"SignUp");
+	}
 	
 	@AfterTest
 	public void close() {
