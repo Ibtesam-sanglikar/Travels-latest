@@ -49,12 +49,5 @@ public class HomePage extends Browser{
 		   driver.findElement(transfer).click();
 		
 	}
-	/*public static void main(String[] args) throws IOException {
-		HomePage hp=new HomePage();
-		hp.launchBrowser(driver);
-		hp.My_account();
-	    hp.SignUp();
-	    //hp.Login();
-	    
-	}*/
+
 }
