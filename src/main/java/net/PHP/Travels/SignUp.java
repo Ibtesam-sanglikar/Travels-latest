@@ -73,6 +73,4 @@ public class SignUp extends Browser{
 		public void SignUp() {
 			driver.findElement(By.xpath("//a[@class='dropdown-item tr']")).click();
 		}
-			
-	
 }
