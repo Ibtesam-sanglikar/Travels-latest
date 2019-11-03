@@ -51,10 +51,9 @@ public void screen_shot() throws IOException
 	  Assert.assertTrue(true,"this page is not the results page");
 	  
 	  //capturing screenshot
-	  TakesScreenshot ts=(TakesScreenshot)driver;
-	  File source=ts.getScreenshotAs(OutputType.FILE);
-	  FileUtils.copyFile(source, new File("./Screenshot/hotels.png"));
-	  log.info("taking screensht");
+	   log.info("taking screenshot"+h.getClass());
+           Screenshot.CaptureScreenshot(driver,"Hotel");
+ 
 }
 @AfterTest
 public void close() {
