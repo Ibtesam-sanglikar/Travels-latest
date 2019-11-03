@@ -55,11 +55,9 @@ public class TestLogin extends Browser {
 	  log.info("taking screenshot.....");
 	  
 	  // capturing screenshot
-	  TakesScreenshot ts=(TakesScreenshot)driver;
-	  File source=ts.getScreenshotAs(OutputType.FILE);
-	  FileUtils.copyFile(source, new File("./Screenshot/login.png"));
-	  
-	  }
+           log.info("taking screenshot of: "+l.getClass());
+            Screenshot.CaptureScreenshot(driver,"Login");
+ 	  }
   @AfterTest
   public void close() {
 	  l.Quit(driver);
