@@ -48,11 +48,9 @@ public class TestTour extends Browser {
 	      Assert.assertTrue(true,"this page is not the tour results page");
 	      
 	      //capturing screenshot
-		  TakesScreenshot ts=(TakesScreenshot)driver;
-		  File source=ts.getScreenshotAs(OutputType.FILE);
-		  FileUtils.copyFile(source, new File("./Screenshot/tours.png"));
-		  log.info("taking screensht");
-	  }
+		  log.info("taking screenshot of: "+t.getClass());
+       	          Screenshot.CaptureScreenshot(driver,"Tours");
+}
 	@AfterTest
 	  public void close() {
 		  Quit(driver);
