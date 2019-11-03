@@ -34,8 +34,7 @@ public class Tours extends HomePage{
 		driver.findElement(location).click();
 		driver.findElement(By.xpath("//div[@id='select2-drop']//input[contains(@class,'select2-input')]")).sendKeys(prop.getProperty("tour_destination"));
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
-	    driver.findElement(By.xpath("//div[contains(text(),'Trip')]")).click();
-				
+	    driver.findElement(By.xpath("//div[contains(text(),'Trip')]")).click();			
 	}
 	
 	
