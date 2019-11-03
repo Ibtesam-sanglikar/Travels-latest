@@ -39,12 +39,5 @@ public class Browser{
 	    driver.quit();
 	    log.info("closing browser");
 	}
-	/*public static void main(String[] args) throws IOException {
-		Browser b=new Browser();
-		b.launchBrowser(driver);
-		b.Maximize(driver);
-		b.Quit(driver);
-		
-	}*/
-
+	
 }
