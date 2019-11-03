@@ -16,7 +16,7 @@ public class Login extends HomePage{
 	
 	By login=By.xpath("//button[@class='btn btn-primary btn-lg btn-block loginbtn']");
 	By email=By.xpath("//input[@placeholder='Email']");
-    By password=By.xpath("//input[@placeholder='Password']");
+        By password=By.xpath("//input[@placeholder='Password']");
     
     
     public void email()
